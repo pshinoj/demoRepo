@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Bean;
 public class CoreConfigMock {
     @Bean
     public JobQueue jobQueue() {
+		int i = 1;
+		i++;
         return new MockJobQueue();
     }
 }
